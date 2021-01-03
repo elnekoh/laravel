@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(ChampionSeeder::class);
         \App\Models\Champion::factory(5)->create();
     }
 }
